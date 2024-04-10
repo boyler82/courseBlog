@@ -1,14 +1,16 @@
 {
-  "name": "courseblog",
+  "name": "blog-v3",
   "version": "1.0.0",
-  "description": "",
+  "description": "Blog sample",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --source-map scss/main.scss:css/compiled_style.css",
+    "sass-prod": "sass --no-source-map --style=compressed scss/main.scss:css/compiled_style.css"
   },
   "author": "Flinn",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.74.1"
+  "devDependencies": {
+    "sass": "^1.69.5"
   }
 }
